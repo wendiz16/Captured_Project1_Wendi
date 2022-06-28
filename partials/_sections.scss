@@ -1,0 +1,393 @@
+// index-page main (sections)
+
+// briefInfo section 
+.briefInfo {
+  width:100%;
+  height:100%;
+  background-color: $secondary;
+  padding: 100px;
+  margin-top: -100px;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    justify-content: center;
+    align-items: center;
+    h3, p{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//solutions section
+
+.solutions{
+  background-color: $primary;
+  .wrapper{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    .container1{
+      width:38%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+       .imgContainer{ 
+        box-shadow:30px 30px $boxColor;
+        margin-top: -150px;
+       }
+      .contentContainer{
+        margin-left: 100px;
+        text-align: right;
+        p{
+          text-align: left;
+          margin-bottom: 10px;
+        }
+        h4{
+          margin-bottom: 10px;
+        }
+      }
+    
+     }
+    .container2{
+      position: relative;
+      right:-240px;
+      width:60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      .contentContainer{
+        margin-top: 80px;
+        margin-right:220px;
+        
+        h4,p{
+          margin-bottom: 20px;
+        }
+        .btn{
+          margin-bottom: 150px;
+        }
+      }
+      .imgContainer{ 
+        box-shadow:-30px 30px $boxColor;
+       }
+    }
+  }  
+}
+
+//tips section
+
+.tips{
+  background-color: $secondary;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    h4{
+      margin-bottom: 20px;
+    }
+    .tipWrapper1, .tipWrapper2{
+      display: flex;
+      justify-content: space-between;
+    }
+    .tipContainer1,.tipContainer2,.tipContainer3,.tipContainer4{
+        display: flex;
+        width:42%;
+        justify-content: space-between;
+        gap:20px;
+    }
+    .tipContainer1,.tipContainer3 {
+      padding: 80px 0 60px 60px;
+    }
+    .tipContainer2,.tipContainer4 {
+      padding:80px 60px 60px 0;
+    }
+    .iconGroup .fas{
+        border-radius: 50%;
+        background: $btnColor;
+        padding: 10px 10px;
+      }
+    
+  }
+}
+
+// profile section 
+.profile{
+  background-color: $secondary;
+  .tipImg img {
+    width:100%;
+  }
+  .profileContainer{
+    padding: 100px 80px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .profileImg{
+      width:25%;
+      box-shadow: 30px 30px $boxColor;
+      
+    }
+    .profileContent{
+      width:60%;
+      margin: 0 auto;
+      h3{
+        margin-bottom: 20px;
+      }
+      p{
+        margin-bottom: 40px;
+      }
+    }
+     
+  } 
+}
+
+// gallery section
+.gallery{ 
+  background-color: $primary;
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content:center;
+    margin: 0 auto;
+    gap:2rem;
+    padding: 80px 80px;
+  }
+}
+
+// Contact-page 
+
+.contactMain{
+  background-color: $secondary;
+  margin-top: -150px;
+  .contactPage .wrapper{
+    padding: 0px 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    .contactInfo{
+      width:35%;
+      padding: 200px 30px 20px 50px;
+      .socialIcon{
+        display: flex;
+        justify-content: flex-start;
+        i {
+        margin-right: 40px;
+        transition: all 0.5s;
+        &:hover,&:focus{
+          color: $btnColor;
+         }
+        }
+        margin-bottom: 20px; 
+      }
+      h4{
+        margin-bottom: 20px;
+      }
+      p{
+        span{
+          display: block;
+        }
+      }
+    }
+    .contactForm{
+      box-shadow: -30px 30px $boxColor;
+      width:58%;
+      margin-top: -130px;
+      margin-bottom: 100px;
+      form{
+        background-color: white;
+        padding: 45px;
+        display: grid;
+        grid-template-areas:
+        "name email"
+        "textarea textarea"
+        "btn btn";
+        grid-gap:1rem;
+        input,textarea, .btn{
+          border: none;
+          color:$fontColor;
+          padding:10px;
+          margin-bottom: 20px;
+          &::placeholder {
+           color:$fontColor;
+           opacity: 1;
+           line-height: 1.2;
+         }
+        }
+
+         input{
+          border-bottom: 2px solid $btnColor;
+          outline: none;
+         }
+         textarea{
+          border:2px solid $btnColor ;
+         }
+         .btn:hover, .btn:focus{
+          color:white;
+         }
+
+        
+        // grid areas
+        .name{
+          grid-area: name;
+        }
+        .email{
+          grid-area: email;
+        }
+        .textarea{
+          grid-area: textarea;
+        }
+        .btn{
+          grid-area: btn;
+        }
+      }
+    }
+  }
+}
+
+//Blog page - section
+
+.blogMain{
+  background-color: $secondary;
+  margin-top: -230px;
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+    .sideContainer{
+      width:40%;
+      margin: 50px 20px 20px 0;
+      .sideContent{
+        background-color: white;
+        padding:20px 0 20px 0px;
+        display: flex;
+        width:500px;
+        margin-top: -400px;
+        margin-left: 50px;
+        flex-direction: column;
+        .captured{
+          padding: 20px;
+          margin-right: 10px;
+          h4{
+          margin-top: 450px;
+          margin-bottom: 25px;}
+          p{
+            margin-bottom: 25px;
+            text-align: left;
+          }
+        }
+        .posts{
+          padding: 20px;
+          h4{
+            margin-bottom: 25px;
+          }
+          li{
+            list-style:inside;
+            color: $btnColor;
+            a{
+              font-size: 20px;
+              font-family: $bodyFamily;
+              line-height: 32px;
+            }
+          }
+        }
+      }
+    }
+    .blogContainer{
+      width:55%;
+      margin-right: -20px;
+      .blogImg{
+        margin-top: -200px;
+        margin-right: -35px;
+        box-shadow: -30px 30px $boxColor;
+      }
+      .blogContent{
+        padding: 20px 40px;
+        margin-left:-20px;
+        box-shadow: -10px 10px $boxColor;
+        background-color: $secondary;
+        h3{
+          margin-top: 30px;
+        }
+      }
+    
+    .commentsContent1{
+      margin-bottom: 150px;
+    }
+    .comments{
+      margin-top: 30px;
+      padding: 20px;
+      img{
+        width:50%;
+        height:50%;
+      }
+      h4{
+        margin-bottom: 40px;
+      }
+      .content{
+        display: flex;
+        gap:30px;
+      }
+    }
+    .blogForm{
+      margin-top: 80px;
+      background-color: $secondary;
+      padding: 30px;
+      form {
+        display: grid;
+        grid-template-areas:
+        "name email"
+        "textarea textarea"
+        "btn btn";
+        grid-gap:1rem;
+        input,textarea, .btn{
+          border: none;
+          color:$fontColor;
+         
+          padding:10px;
+          margin-bottom: 20px;
+          &::placeholder {
+           color:$fontColor;
+           opacity: 1;
+           line-height: 1.2;
+         }
+        }
+        input, textarea{
+          background-color: $secondary;
+        }
+
+         input{
+          border-bottom: 2px solid $btnColor;
+          outline: none;
+         }
+         textarea{
+          border:2px solid $btnColor ;
+         }
+         .btn:hover, .btn:focus{
+          color:white;
+         }
+        // grid areas
+        .name{
+          grid-area: name;
+        }
+        .email{
+          grid-area: email;
+        }
+        .textarea{
+          grid-area: textarea;
+        }
+        .btn{
+          grid-area: btn;
+          margin-bottom: 40px;
+        }
+
+        }  
+      }
+  }
+
+ }
+}

@@ -1,0 +1,462 @@
+@media(max-width:1280px){
+ //home page
+ .homeHeader{
+  h1{
+    display: none;
+  }}
+  .homeHeader,.blogHeader, .contactHeader{
+    .navBar{
+    position: relative;
+    left:600px;
+    top:20px;
+  }
+  } 
+  .blogPage{
+    .sideContainer{
+      .captured{
+        padding: 10px;
+        strong{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width:1000px){
+ //home page
+  .homeHeader{
+  background-image: none;
+  background-color: $primary;
+  .navBar{
+    position: relative;
+     top: 20px;
+     left:0;
+  }
+  h1{
+    position: relative;
+    top:-20px;
+    color:gray;
+  }
+  .imgWrapper img {
+    display: none;
+  }
+ }
+// sections
+ .solutions{
+  .wrapper{
+    justify-content: flex-start;
+
+    .container1{
+      .imgContainer {
+        margin-left: -180px;
+        box-shadow: none;// it seems not work?
+      }
+      .contentContainer{
+        margin-left: 0;
+        text-align: left;
+        padding: 30px;
+      }
+    }
+  
+  .container2{
+    position: relative;
+    right:0;
+    
+    .imgContainer{
+      box-shadow: none;
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+    .contentContainer{
+      margin-left: 0;
+      text-align: left;
+      padding: 20px 0 0 10px;
+      margin-top: 0;
+      .btn{
+        margin-bottom: 60px;
+      }
+      
+    }
+  }  
+
+}}
+//profile section 
+.profile{
+  .profileContainer{
+    .profileImg{
+      box-shadow: none;
+    }
+  }
+}
+// blog page
+.blogHeader{
+  .navBar{
+    position: relative;
+    top:20px;
+    left:0;
+  }
+}
+.blogMain{
+  .wrapper{
+    flex-direction: column;
+    .sideContainer{
+     width:100%;
+     margin-left:100px;
+     margin-bottom: 300px;
+    }
+    
+    
+    .blogContainer{
+      width:80%; 
+      margin-left: 100px;
+      .blogImg, .blogContent{
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// Contact-page 
+.contactHeader{
+ 
+  .navBar{
+    position: relative;
+    top: 20px;
+    left:0;
+  }
+  h2{
+    margin-top: 100px;
+  }
+}
+
+// section
+.contactMain{
+  margin-top: -250px;
+  .contactPage{
+    .wrapper{
+      .contactInfo{
+        width:48%;
+        margin-left: -70px;
+      }
+      .contactForm{
+        box-shadow: none;
+        form{
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+}
+// for smartphones
+@media(max-width:500px){
+//home page 
+.homeHeader{
+  .navBar {
+    a{
+      margin-right: 15px;
+      font-size: 18px;
+    }
+  }
+  h1{
+    font-size: 45px;
+    margin-top: 100px;
+  }
+}
+//sections
+.briefInfo{
+  padding: 20px;
+  margin-bottom: 150px;
+  h3{
+    font-size: 25px;
+  }
+  p,.btn{
+    font-size: 18px;
+    text-align: center;
+  }
+  .btn{
+    padding: 10px;
+  }
+}
+.solutions{
+  .wrapper{
+    flex-direction: column;
+    margin: 0 auto;
+    .container1{
+      margin:0 auto;
+      width:100%;
+      .imgContainer{
+        margin-left: -200px;
+      }
+      .contentContainer{
+        margin:0;
+        padding: 15px;
+        text-align: center;
+        h4{
+          font-size:20px;
+          margin-top: 30px;
+        }
+        p,.btn{
+         font-size: 18px;
+         text-align: center;
+        }
+        .btn{
+          padding: 10px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .container2{
+      width:100%;
+      margin: 0;
+      padding: 0;
+      flex-direction: column-reverse;
+      .contentContainer{
+        margin:0;
+        padding: 15px;
+        text-align: center;
+        h4{
+          font-size:20px;
+          margin-top: 30px;
+        }
+        p,.btn{
+         font-size: 18px;
+         text-align: center;
+        }
+        .btn{
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+.tips{
+ .wrapper{
+  .tipWrapper1, .tipWrapper2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tipContainer1,.tipContainer2,.tipContainer3,.tipContainer4{
+    width:100%;
+    padding: 10px;
+    h4{
+      font-size:20px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+ }
+}
+
+.profile{
+  .profileContainer{
+    flex-direction: column;
+    padding: 0;
+    margin-top: 30px;
+    .profileImg{
+      width:80%;
+      margin:0 auto;
+      margin-bottom: 30px; 
+    }
+    .profileContent{
+      width:100%;
+      padding:0;
+      margin: 0 auto;
+      h3{
+        font-size: 25px;
+        text-align: center;
+      }
+      p,.btn{
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+.gallery{
+  .wrapper{
+    grid-template-columns:1fr;
+    padding: 25px;
+  }
+}
+//Blog page
+.blogHeader{
+  background:none;
+  background-color: $primary;
+  .navBar {
+    a{
+      margin-right: 15px;
+      font-size: 18px;
+    }
+  }
+  h2{
+    font-size: 42px;
+    margin-top:35px;
+  }
+}
+//section
+.blogMain{
+  .wrapper{
+    .sideContainer{
+      width:100%;
+      margin-top:0;
+      padding-top:0;
+      margin-left: 0;
+      padding-left: 0;
+      img{
+        margin-top: -200px;
+      }
+      .sideContent{
+      margin-left:0px;
+      width:100%;
+
+      .captured{
+        margin: 0;
+        padding: 5px;
+       h4{ 
+        font-size: 20px;
+        text-align: center;
+       }
+       p{
+        font-size: 18px;
+        text-align: center;
+        a{
+          font-size: 18px;
+        }
+       }
+      }
+      .posts{
+        margin: 0;
+        padding: 5px;
+       h4{ 
+        font-size: 20px;
+        text-align: center;
+       }
+       li {
+        font-size: 18px;
+        text-align: center;
+        a{
+          font-size: 18px;
+        }
+       }}
+    }
+   }
+   .blogContainer{
+    width:100%;
+    margin:0;
+    padding: 10px;
+    .blogContent{
+      margin: 0;
+      h3{
+        font-size:25px;
+        text-align: center;
+      }
+      p{
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    
+    .comments{
+      h4{
+        font-size:20px;
+      }
+      .commentsContent1{
+        margin-bottom: 50px;
+      }
+      .content{
+        flex-direction: column;
+        
+        img{
+          width:60%;
+          height:60%;
+          margin: 0 auto;
+        }
+        .contentContainer{
+          padding: 10px;
+          p{
+            font-size: 18px;
+            text-align: center;
+          }
+        }
+      }
+    }
+   .blogForm{
+    form{
+      padding: 10px;
+      grid-template-areas:
+        "name"
+        "email"
+        "textarea"
+        "btn";
+    }
+   }
+  }
+ }
+}
+//Contact page
+.contactHeader{
+  .navBar {
+    a{
+      margin-right: 15px;
+      font-size: 18px;
+    }
+  }
+  h2{
+    font-size: 42px;
+    margin-top:35px;
+  }
+}
+.contactMain{
+  margin-top: -300px;
+ .contactPage{
+  .wrapper{
+    flex-direction: column;
+    .contactInfo{
+      width:100%;
+      margin-top: -120px;
+      margin-bottom: 200px;
+      margin-left:-60px;
+      h4{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      p{
+        font-size: 18px;
+        
+        span{
+          display: inline-block;
+          width:100%;
+        }
+        padding: 5px;
+      }
+      .socialIcon{
+        i{
+          margin-right: 50px;
+        }
+        margin-bottom: 20px;
+      }
+    }
+    .contactForm{
+      width:100%;
+      form{
+        grid-template-areas:
+        "name"
+        "email"
+        "textarea"
+        "btn";
+      }
+    }
+  }
+ }
+}
+
+}

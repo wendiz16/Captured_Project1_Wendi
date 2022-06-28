@@ -1,0 +1,72 @@
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper{
+  max-width: 1400px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color:$fontColor;
+}
+li {
+  list-style: none;
+}
+p,i{
+ font-size: 20px;
+ font-family: $bodyFamily;
+ line-height: 32px;
+}
+h1 {
+font-family: $headerFamily;
+font-size: 138px;
+font-weight: bold;
+text-align: center;
+font-style:italic;
+}
+h2{
+  font-family: $headerFamily;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  font-style:italic; 
+  line-height: 92px;
+}
+h3 {
+ font-family: $headerFamily;
+ font-size: 42px;
+ font-weight: bold;
+ font-style:italic;
+}
+h4{
+  font-family: $headerFamily;
+  font-size: 32px;
+  font-weight: bold;
+  font-style:italic;
+}
+.btn{
+  display: inline-block;
+  font-family: $headerFamily;
+  font-size: 20px;
+  font-weight: bold;
+  font-style:italic;
+  text-align: center;
+  line-height: 32px;
+  background-color: $btnColor;
+  padding: 15px 20px;
+  transition: all 0.5s;
+  &:hover, &:focus{
+   background-color: $fontColor;
+   color:$secondary;
+  }
+}
