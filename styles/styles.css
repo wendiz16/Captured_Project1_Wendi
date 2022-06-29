@@ -332,7 +332,15 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 80px;
+}
+.homeHeader .imgWrapper {
+  margin-top: -500px;
+  margin-left: 1300px;
+  -webkit-box-shadow: -40px 40px 0px #FAFD69, -40px -40px 0px #FAFD69, 0px 40px 0px #FAFD69, 0px -40px 0px #FAFD69;
+          box-shadow: -40px 40px 0px #FAFD69, -40px -40px 0px #FAFD69, 0px 40px 0px #FAFD69, 0px -40px 0px #FAFD69;
 }
 
 .navWrapper {
@@ -370,13 +378,6 @@ h1 {
 }
 .navBar a:hover, .navBar a:focus {
   border-bottom: 2px solid #4CEEA7;
-}
-
-.imgWrapper {
-  margin-top: -500px;
-  margin-left: 1300px;
-  -webkit-box-shadow: #FAFD69 0px 10px 40px, #FAFD69 0px 0px 0px 30px;
-          box-shadow: #FAFD69 0px 10px 40px, #FAFD69 0px 0px 0px 30px;
 }
 
 .contactHeader {
@@ -593,6 +594,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 30px;
 }
 .profile .profileContainer .profileImg {
   width: 25%;
@@ -917,8 +919,13 @@ footer p {
 }
 
 @media (max-width: 1450px) {
+  .homeHeader {
+    background-color: whitesmoke;
+    margin-bottom: -150px;
+  }
   .homeHeader .imgWrapper {
-    margin-left: 900px;
+    margin-left: 800px;
+    margin-top: -450px;
   }
 
   .homeHeader .navBar, .blogHeader .navBar, .contactHeader .navBar {
@@ -927,11 +934,30 @@ footer p {
     top: 20px;
   }
 
-  .blogPage .sideContainer .captured {
+  .briefInfo .wrapper h3 {
+    margin-top: 80px;
+  }
+
+  .solutions .wrapper .container2 {
+    right: -100px;
+  }
+
+  .profile .profileContainer .profileImg {
+    width: 32.5%;
+  }
+  .profile .profileContent {
+    width: 60%;
+  }
+
+  .blogMain .sideContainer .captured {
     padding: 10px;
   }
-  .blogPage .sideContainer .captured strong {
+  .blogMain .sideContainer .captured strong {
     display: block;
+  }
+  .blogMain .blogContainer {
+    position: relative;
+    left: 100px;
   }
 }
 @media (max-width: 1000px) {
@@ -1021,7 +1047,7 @@ footer p {
   .blogMain .wrapper .blogContainer {
     margin: 0;
     width: 100%;
-    margin-left: -500px;
+    margin-left: -80px;
   }
   .blogMain .wrapper .blogContainer .blogImg, .blogMain .wrapper .blogContainer .blogContent {
     -webkit-box-shadow: none;

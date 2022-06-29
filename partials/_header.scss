@@ -16,7 +16,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:100%; 
+    object-fit: cover;
     margin-bottom: 80px;
+    .imgWrapper{
+      margin-top: -500px;
+      margin-left:1300px;
+      // box-shadow: $boxColor 0px 10px 40px, $boxColor 0px 0px 0px 30px;
+      box-shadow: -40px 40px 0px $boxColor,-40px -40px 0px $boxColor,0px 40px 0px $boxColor,0px -40px 0px $boxColor;
+
+     } 
+    
   }
   
   
@@ -52,12 +61,7 @@
       border-bottom: 2px solid $btnColor;
     }
  }
- .imgWrapper{
-  margin-top: -500px;
-  margin-left:1300px;
-  box-shadow: $boxColor 0px 10px 40px, $boxColor 0px 0px 0px 30px;
- } 
-
+ 
  // Contact page- header
  .contactHeader{
   background-image: url(../assets/contact-header.jpg);

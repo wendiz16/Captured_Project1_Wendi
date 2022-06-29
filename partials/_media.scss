@@ -1,9 +1,14 @@
 @media(max-width:1450px){
  //home page
  .homeHeader{
+  background-color: whitesmoke;
   .imgWrapper{
-    margin-left: 900px;
+
+    margin-left: 800px;
+    margin-top: -450px;
   }
+  margin-bottom: -150px;
+  
 }
   .homeHeader,.blogHeader, .contactHeader{
     .navBar{
@@ -12,7 +17,34 @@
     top:20px;
   }
   } 
-  .blogPage{
+  .briefInfo{
+    .wrapper{
+      h3{
+        margin-top: 80px;
+      }
+    }
+  }
+  .solutions{
+    .wrapper{
+      .container2{
+        right:-100px;
+      }
+    }
+  }
+  .profile{
+    .profileContainer{
+      .profileImg{
+        width:32.5%;
+      }
+    }
+    .profileContent{
+      width:60%;
+    }
+  }
+  
+  
+  // blog page 
+  .blogMain{
     .sideContainer{
       .captured{
         padding: 10px;
@@ -20,6 +52,10 @@
           display: block;
         }
       }
+    }
+    .blogContainer{
+      position: relative;
+      left:100px;
     }
   }
 }
@@ -118,7 +154,7 @@
     .blogContainer{
       margin: 0;
       width:100%; 
-      margin-left: -500px;
+      margin-left: -80px;
       .blogImg, .blogContent{
         box-shadow: none;
       }
