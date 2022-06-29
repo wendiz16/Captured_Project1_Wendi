@@ -1,9 +1,10 @@
-@media(max-width:1280px){
+@media(max-width:1450px){
  //home page
  .homeHeader{
-  h1{
-    display: none;
-  }}
+  .imgWrapper{
+    margin-left: 900px;
+  }
+}
   .homeHeader,.blogHeader, .contactHeader{
     .navBar{
     position: relative;
@@ -46,11 +47,14 @@
 // sections
  .solutions{
   .wrapper{
-    justify-content: flex-start;
-
+    margin: 0 auto;
+    flex-direction: column;
+    
     .container1{
+      width:100%;
+      margin-top: 200px;
       .imgContainer {
-        margin-left: -180px;
+        //margin-left: -180px;
         box-shadow: none;// it seems not work?
       }
       .contentContainer{
@@ -61,9 +65,10 @@
     }
   
   .container2{
-    position: relative;
-    right:0;
-    
+     position: relative;
+     left:0;
+     width:100%;
+
     .imgContainer{
       box-shadow: none;
       img{
@@ -111,8 +116,9 @@
     
     
     .blogContainer{
-      width:80%; 
-      margin-left: 100px;
+      margin: 0;
+      width:100%; 
+      margin-left: -500px;
       .blogImg, .blogContent{
         box-shadow: none;
       }
@@ -140,7 +146,7 @@
     .wrapper{
       .contactInfo{
         width:48%;
-        margin-left: -70px;
+        margin-left: -85px;
       }
       .contactForm{
         box-shadow: none;
@@ -351,10 +357,10 @@
    }
    .blogContainer{
     width:100%;
-    margin:0;
+    //margin-left: 100px;
     padding: 10px;
     .blogContent{
-      margin: 0;
+      margin:0;
       h3{
         font-size:25px;
         text-align: center;
