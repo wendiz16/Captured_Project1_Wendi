@@ -6,7 +6,7 @@
   height:100%;
   background-color: $secondary;
   padding: 100px;
-  margin-top: -100px;
+  margin-top: -300px;
   .wrapper{
     display: flex;
     flex-direction: column;
@@ -22,62 +22,59 @@
 //solutions section
 
 .solutions{
-  background-color: $primary;
-  .wrapper{
-    width:100%;
-    height:100%;
-    display: flex;
+  .setFlex{
+    flex-grow: 1;
+    width:50vw;
+    min-width: 300px;
+    max-width: 50vw;
+    margin:auto;
+  }
+    background-color: $primary;
+    display:flex;
     flex-direction: row;
+    width:100vw;
     flex-wrap: wrap;
-    margin: 0;
-    justify-content:space-between;
-    .container1{
-      width:40%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-       .imgContainer{ 
-        box-shadow:30px 30px $boxColor;
-        margin-top: -150px;
-       }
-      .contentContainer{
-        margin-left: 100px;
-        text-align: right;
-        p{
-          text-align: left;
-          margin-bottom: 10px;
-        }
-        h4{
-          margin-bottom: 10px;
-        }
+    align-items:center;
+    .contentContainer1{
+      text-align: left;
+      padding-left: 5vw;
+      padding-right: 10vw;
+      p{
+        text-align: left;
+        margin-bottom: 10px;
       }
-    
-     }
-    .container2{
-      position: relative;
-      right:-600px;
-      width:50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      .contentContainer{
-        margin-top: 80px;
-        margin-right:220px;
-        
-        h4,p{
-          margin-bottom: 20px;
-        }
-        .btn{
-          margin-bottom: 150px;
-        }
+      h4{
+        margin-bottom: 10px;
       }
-      .imgContainer{ 
-        box-shadow:-30px 30px $boxColor;
-       }
     }
-  }  
+    
+    .contentContainer2{
+      padding-left: 10vw;
+      padding-right: 5vw;
+      text-align: right;
+      p{
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      h4{
+        margin-bottom: 10px;
+      }
+    }
+    
+    .imgContainer1 {
+      padding:0;
+      margin:auto;
+      text-align: left;
+      margin-top: -2vw;
+    }
+    .imgContainer2 {
+      padding:0;
+      margin:auto;
+      text-align: right;
+    }
+  
 }
+
 
 //tips section
 
@@ -131,7 +128,7 @@
     gap:30px;
     .profileImg{
       width:25%;
-      box-shadow: 30px 30px $boxColor;
+      //box-shadow: 30px 30px $boxColor;
     }
     .profileContent{
       width:60%;
@@ -165,7 +162,7 @@
 
 .contactMain{
   background-color: $secondary;
-  margin-top: -150px;
+  margin-top: -350px;
   .contactPage .wrapper{
     padding: 0px 50px 50px 50px;
     display: flex;
@@ -254,64 +251,72 @@
 
 .blogMain{
   background-color: $secondary;
-  margin-top: -230px;
-  .wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
+  margin-top: -400px;
+  .blogWrapper{
     
+    display: flex;
+    flex-wrap: wrap;
+    width:100vw;
     .sideContainer{
-      width:40%;
-      margin: 50px 20px 20px 0;
-      .sideContent{
-        background-color: white;
-        padding:20px 0 20px 0px;
-        display: flex;
-        width:500px;
-        margin-top: -400px;
-        margin-left: 50px;
-        flex-direction: column;
-        .captured{
-          padding: 20px;
-          margin-right: 10px;
-          h4{
-          margin-top: 450px;
-          margin-bottom: 25px;}
-          p{
-            margin-bottom: 25px;
-            text-align: left;
-          }
+     flex-grow: 1;
+     width:33vw;
+     min-width: 300px;
+     max-width: 100vw;
+     //margin:0 auto;
+     text-align: left;
+     margin: 80px 20px 20px 0;
+     .sideContent{
+      background-color: white;
+      padding:20px 0 20px 0px;
+      display: flex;
+      width:500px;
+      margin-top: -400px;
+      margin-left: 50px;
+      flex-direction: column;
+      .captured{
+        padding: 20px;
+        margin-right: 10px;
+        h4{
+        margin-top: 450px;
+        margin-bottom: 25px;}
+        p{
+          margin-bottom: 25px;
+          text-align: left;
         }
-        .posts{
-          padding: 20px;
-          h4{
-            margin-bottom: 25px;
-          }
-          li{
-            list-style:inside;
-            color: $btnColor;
-            a{
-              font-size: 20px;
-              font-family: $bodyFamily;
-              line-height: 32px;
-            }
+      }
+      .posts{
+        padding: 20px;
+        h4{
+          margin-bottom: 25px;
+        }
+        li{
+          list-style:inside;
+          color: $btnColor;
+          a{
+            font-size: 20px;
+            font-family: $bodyFamily;
+            line-height: 32px;
           }
         }
       }
     }
+  }
+     
+    
     .blogContainer{
-      width:55%;
-      position: relative;
-      right:-520px;
+      flex-grow: 2;
+      width:55vw;
+      min-width: 300px;
+      max-width: 100vw;
+      margin:auto;
+      text-align: right;
       .blogImg{
         margin-top: -200px;
-        margin-right: -35px;
-        box-shadow: -30px 30px $boxColor;
+        margin-left:-10px;
         margin-bottom: 100px;
       }
       .blogContent{
-        
-        margin-left:-20px;
+        text-align: left;
         margin-top: -80px;
         padding: 10px 40px;
         box-shadow: -10px 10px $boxColor;
@@ -325,6 +330,7 @@
       margin-bottom: 150px;
     }
     .comments{
+      text-align: left;
       margin-top: 30px;
       padding: 20px;
       img{
@@ -393,7 +399,8 @@
 
         }  
       }
+
+    }
   }
 
- }
 }

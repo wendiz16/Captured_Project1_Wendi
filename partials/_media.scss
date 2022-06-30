@@ -1,184 +1,60 @@
-@media(max-width:1450px){
- //home page
- .homeHeader{
-  background-color: whitesmoke;
-  .imgWrapper{
-
-    margin-left: 800px;
-    margin-top: -450px;
-  }
-  margin-bottom: -150px;
-  
-}
-  .homeHeader,.blogHeader, .contactHeader{
-    .navBar{
-    position: relative;
-    left:600px;
-    top:20px;
-  }
-  }
-  //sections 
-  .briefInfo{
-    .wrapper{
-      h3{
-        margin-top: 80px;
-      }
-    }
-  }
-  .solutions{
-    .wrapper{
-      .container2{
-        right:-100px;
-      }
-    }
-  }
-  .profile{
-    .profileContainer{
-      .profileImg{
-        width:32.5%;
-      }
-    }
-    .profileContent{
-      width:60%;
-    }
-  }
-  
-  
-  // blog page 
-  .blogMain{
-    .sideContainer{
-      .captured{
-        padding: 10px;
-        strong{
-          display: block;
-        }
-      }
-    }
-    .blogContainer{
-      position: relative;
-      left:100px;
-    }
-  }
-}
 
 
 @media(max-width:1000px){
- //home page
-  .homeHeader{
-  background-image: none;
-  background-color: $primary;
-  .navBar{
-    position: relative;
-     top: 20px;
-     left:0;
-  }
-  h1{
-    position: relative;
-    top:-20px;
-    color:gray;
-  }
-  .imgWrapper img {
+ 
+
+// home-page
+.homeHeader{
+   .imgWrapper{
     display: none;
-  }
- }
-// sections
- .solutions{
+   }
+   h1{
+    margin-top: 0;
+   }
+}
+//sections
+.briefInfo{
+  margin-top: 0;
   .wrapper{
-    margin: 0 auto;
-    flex-direction: column;
-    
-    .container1{
-      width:100%;
-      margin-top: 200px;
-      .imgContainer {
-        //margin-left: -180px;
-        box-shadow: none;// it seems not work?
-      }
-      .contentContainer{
-        margin-left: 0;
-        text-align: left;
-        padding: 30px;
-      }
-    }
-  
-  .container2{
-     position: relative;
-     left:0;
-     width:100%;
-
-    .imgContainer{
-      box-shadow: none;
-      img{
-        width:100%;
-        height:100%;
-      }
-    }
-    .contentContainer{
-      margin-left: 0;
-      text-align: left;
-      padding: 20px 0 0 10px;
-      margin-top: 0;
-      .btn{
-        margin-bottom: 60px;
-      }
-      
-    }
-  }  
-
-}}
-//profile section 
-.profile{
-  .profileContainer{
-    .profileImg{
-      box-shadow: none;
+    h3{
+      margin-top: -600px;
     }
   }
 }
-// blog page
-.blogHeader{
-  .navBar{
-    position: relative;
-    top:20px;
-    left:0;
-  }
-}
-.blogMain{
-  .wrapper{
+
+
+//Blog-page
+.blogPage{
+  .blogWrapper{
     flex-direction: column;
+    justify-content: space-between;
     .sideContainer{
-     width:100%;
-     margin-left:100px;
-     margin-bottom: 300px;
+      width:100vw;
+      margin-top: -400px;
+      margin-bottom: 250px;
     }
-    
-    
     .blogContainer{
-      margin: 0;
-      width:100%; 
-      margin-left: -80px;
-      .blogImg, .blogContent{
-        box-shadow: none;
+      width:100vw;
+      .blogForm{
+        width:100%;
+        form{
+          grid-template-areas:
+          "name"
+          "email"
+          "textarea"
+          "btn";
+        }
       }
+
     }
   }
 }
 
 // Contact-page 
-.contactHeader{
- 
-  .navBar{
-    position: relative;
-    top: 20px;
-    left:0;
-  }
-  h2{
-    margin-top: 100px;
-  }
-}
 
 // section
 .contactMain{
-  margin-top: -250px;
+  margin-top: -450px;
   .contactPage{
     .wrapper{
       .contactInfo{
@@ -189,12 +65,18 @@
         box-shadow: none;
         form{
           padding: 10px;
+          grid-template-areas:
+              "name"
+              "email"
+              "textarea"
+              "btn";
+            }
+          }
         }
       }
-    }
   }
 }
-}
+
 // for smartphones
 @media(max-width:500px){
 //home page 
@@ -207,13 +89,14 @@
   }
   h1{
     font-size: 45px;
-    margin-top: 100px;
+    margin-top: -400px;
   }
 }
 //sections
 .briefInfo{
   padding: 20px;
-  margin-bottom: 150px;
+  //margin-bottom: 150px;
+  margin-top: -450px;
   h3{
     font-size: 25px;
   }
@@ -226,56 +109,20 @@
   }
 }
 .solutions{
-  .wrapper{
-    flex-direction: column;
-    margin: 0 auto;
-    .container1{
-      margin:0 auto;
-      width:100%;
-      .imgContainer{
-        margin-left: -200px;
-      }
-      .contentContainer{
-        margin:0;
-        padding: 15px;
-        text-align: center;
-        h4{
-          font-size:20px;
-          margin-top: 30px;
-        }
-        p,.btn{
-         font-size: 18px;
-         text-align: center;
-        }
-        .btn{
-          padding: 10px;
-          margin-bottom: 30px;
-        }
-      }
-    }
-    .container2{
-      width:100%;
-      margin: 0;
-      padding: 0;
-      flex-direction: column-reverse;
-      .contentContainer{
-        margin:0;
-        padding: 15px;
-        text-align: center;
-        h4{
-          font-size:20px;
-          margin-top: 30px;
-        }
-        p,.btn{
-         font-size: 18px;
-         text-align: center;
-        }
-        .btn{
-          padding: 10px;
-        }
-      }
+  
+  flex-direction: column;
+  .setFlex{
+    width:100vw;
+    margin-bottom: 30px;
+    text-align: center;
+    p{
+      text-align: center;
     }
   }
+  .shadowRb,.shadowLb{
+    width:80vw;
+  }
+  
 }
 
 .tips{
@@ -334,20 +181,10 @@
 .blogHeader{
   background:none;
   background-color: $primary;
-  .navBar {
-    a{
-      margin-right: 15px;
-      font-size: 18px;
-    }
-  }
-  h2{
-    font-size: 42px;
-    margin-top:35px;
-  }
 }
 //section
 .blogMain{
-  .wrapper{
+  .blogWrapper{
     .sideContainer{
       width:100%;
       margin-top:0;
@@ -394,7 +231,6 @@
    }
    .blogContainer{
     width:100%;
-    //margin-left: 100px;
     padding: 10px;
     .blogContent{
       margin:0;
@@ -447,19 +283,15 @@
 }
 //Contact page
 .contactHeader{
-  .navBar {
-    a{
-      margin-right: 15px;
-      font-size: 18px;
-    }
-  }
   h2{
     font-size: 42px;
     margin-top:35px;
   }
+  background: none;
+  background-color: $primary;
 }
 .contactMain{
-  margin-top: -300px;
+  margin-top: -700px;
  .contactPage{
   .wrapper{
     flex-direction: column;

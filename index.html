@@ -11,13 +11,14 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <title>CAPTURED</title>
 </head>
-<body>
+<body class="fullWidth">
   <!-- skipLink -->
   <a href="#main" class="skipLink">Skip to Main</a>
 
   <header class="homeHeader">
     <!-- wrapper start -->
-    <div class="navWrapper wrapper">
+    <div class="navWrapper"> 
+      <!-- remove wrapper class here -->
       <nav class="navBar">
         <ul>
           <li><a href="index.html">HOME</a></li>
@@ -27,13 +28,11 @@
         </ul>
       </nav>
       <h1>CAPTURED</h1>
+      <div class="imgWrapper">
+        <img src="./assets/header-box-image.jpg" class="shadowLeft" alt="camera lens">
+      </div>
     </div>
     <!-- wrapper ends -->
-    <!-- imgWrapper starts -->
-    <div class="imgWrapper wrapper">
-      <img src="./assets/header-box-image.jpg" alt="camera lens">
-    </div>
-    <!-- imgWrapper ends -->
   </header>
   
   <!-- Main starts -->
@@ -52,36 +51,31 @@
 
     <!-- section starts (solutions) -->
     <section class="solutions">
-      <div class="wrapper">
-        <div class="container1">
-          <div class="imgContainer">
-            <img src="./assets/left-image.jpg" class="leftImg" alt="It is a picture of camera">
-          </div>
-          
-          <div class="contentContainer gear">
-            <h4>GETTING NEW GEAR</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Cum, ex quibusdam. Provident quisquam repellat rem laudantium 
-               suscipit, excepturi ipsam neque aspernatur doloremque! 
-               Placeat est laboriosam perspiciatis repudiandae quod sunt 
-               obcaecati!</p>
-            <a href="#" class="btn">READ MORE</a>
-          </div> 
+        <div class="imgContainer1 setFlex">
+          <img src="./assets/left-image.jpg" class="shadowRb" alt="It is a picture of camera">
         </div>
-        <div class="container2">
-          <div class="contentContainer skills">
-            <h4>UNLOCK YOUR SKILLS</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eaque veritatis quod ratione debitis. Molestiae itaque est
-            repellendus soluta inventore nemo, suscipit dolorum at 
-            culpa harum eum, consequatur doloribus reprehenderit aperiam.</p>
-            <a href="#" class="btn">READ MORE</a>
-          </div>
-          <div class="imgContainer">
-            <img src="./assets/right-image.jpg" class="rightImg" alt="someone is adjusting his camera">
-          </div>
+        <div class="contentContainer1 skills setFlex">
+          <h4>UNLOCK YOUR SKILLS</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Eaque veritatis quod ratione debitis. Molestiae itaque est
+          repellendus soluta inventore nemo, suscipit dolorum at 
+          culpa harum eum, consequatur doloribus reprehenderit aperiam.</p>
+          <a href="#" class="btn">READ MORE</a>
         </div>
-      </div>
+        <div class="border" style="width:100vw;height:4vw;"> </div>
+        <div class="contentContainer2 gear setFlex">
+          <h4>GETTING NEW GEAR</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cum, ex quibusdam. Provident quisquam repellat rem laudantium 
+              suscipit, excepturi ipsam neque aspernatur doloremque! 
+              Placeat est laboriosam perspiciatis repudiandae quod sunt 
+              obcaecati!</p>
+          <a href="#" class="btn">READ MORE</a>
+        </div> 
+    
+        <div class="imgContainer2 setFlex">
+          <img src="./assets/right-image.jpg" class="shadowLb" alt="someone is adjusting his camera">
+        </div>
     </section>
     <!-- section ends (solutions) -->
 
@@ -151,12 +145,12 @@
     <!-- section starts -->
     <section class="profile">
       <div class="tipImg">
-          <img src="./assets/banner.jpg" alt="This is a map">
+          <img src="./assets/banner.jpg"  alt="This is a map">
       </div>
       <div class="wrapper"> 
         <div class="profileContainer">
           <div class="profileImg">
-            <img src="./assets/small-box.jpg" alt="There is a man with his camera">
+            <img src="./assets/small-box.jpg" class="shadowRb" alt="There is a man with his camera">
           </div>
           <div class="profileContent">
             <h3>THIS MONTH PROFILE</h3>

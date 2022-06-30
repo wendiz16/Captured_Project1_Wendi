@@ -10,43 +10,80 @@
     left:0;
   }}
   .homeHeader {
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
     background-image: url(../assets/header-image.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size:100%; 
-    object-fit: cover;
+    background-position: center top; 
+    background-size:100% auto; 
     margin-bottom: 80px;
-    .imgWrapper{
-      margin-top: -500px;
-      margin-left:1300px;
-      // box-shadow: $boxColor 0px 10px 40px, $boxColor 0px 0px 0px 30px;
-      box-shadow: -40px 40px 0px $boxColor,-40px -40px 0px $boxColor,0px 40px 0px $boxColor,0px -40px 0px $boxColor;
+    .navWrapper{
+      height: 1200px;
+      max-width: 100%;
+      .navBar {
+        position: relative;
+        text-align: center;
+        margin-left:50vw;
+        ul{
+          width: 100%;
+          margin: 0;
+          margin-top: 20px;
+          padding:0;
+          li{
+            display: inline;
+            a{
+              margin-right:40px;
+              font-family: $headerFamily;
+              font-size: 20px;
+              font-weight: bold;
+              font-style:italic;
+              text-align: center;
+              line-height: 29px;
+              &:hover, &:focus{
+             border-bottom: 2px solid $btnColor;
+           }
 
-     } 
-    
+            }
+          }
+        }
+      }
+      h1 {
+        position: relative;
+        top:500px;
+        }
+     .imgWrapper{
+         padding: 0;
+         margin:auto;
+         margin-top: -150px;
+         text-align: right;
+        }
+    }  
   }
   
-  
-
   .navWrapper {
-    height:700px;
+    height:1200px;
     max-width:100%;
-    
   }
   .navBar {
     position: relative;
-    left:850px;
-    top:20px;
+    text-align: center;
+    margin-left:50vw;
   }
   h1 {
   position: relative;
-  top:420px;
+  top:300px;
   }
   .navBar ul {
-   display: flex;
+   width: 100%;
+   margin: 0;
    margin-top: 20px;
+   padding:0;
+  }
+  .navBar li{
+    display: inline;
   }
   .navBar a {
     margin-right:40px;
@@ -59,9 +96,16 @@
     line-height: 29px;
     &:hover, &:focus{
       border-bottom: 2px solid $btnColor;
-    }
+   }
  }
- 
+ .imgWrapper{
+  padding: 0;
+  margin:auto;
+  margin-top: -150px;
+  text-align: right;
+ }
+
+  
  // Contact page- header
  .contactHeader{
   background-image: url(../assets/contact-header.jpg);
@@ -69,15 +113,16 @@
   background-position: center;
   background-size:100%; 
   object-fit: cover;
-  .navbar{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  h2{
+    .navbar{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    h2{
     margin-top: 300px;
-  }
-  margin-bottom: 0;
+    }
+   margin-bottom: 0; 
  }
+
 
  //Blog page- header
  .blogHeader{

@@ -1,6 +1,30 @@
+
+// added new utility
+.fullWidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #EFFDF3;
+}
+
+.shadowRb{
+  width:43vw;
+  box-shadow: 2vw 2vw 0px $boxColor;
+}
+.shadowLb{
+  width:43vw;
+  box-shadow: -2vw 2vw 0px $boxColor;
+}
+.shadowLb2{
+  width: calc(100% - 40px);
+  box-shadow: -40px 40px 0px $boxColor;
+}
+
 img{
   max-width: 100%;
-  display: block;
 }
 
 .wrapper{
@@ -73,3 +97,7 @@ h4{
    color:$secondary;
   }
 }
+.shadowLeft{
+  box-shadow: -80px 80px 0px $boxColor,-80px -80px 0px $boxColor,0px 80px 0px $boxColor,0px -80px 0px $boxColor;
+}
+
