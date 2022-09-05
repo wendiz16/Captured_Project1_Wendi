@@ -1098,19 +1098,18 @@ footer p {
     margin-right: 15px;
     font-size: 18px;
   }
-  .homeHeader .navWrapper .navBar ul li .imgWrapper {
-    margin-top: 0;
-  }
-  .homeHeader .navWrapper .navBar ul li .imgWrapper .shadowLeft {
-    width: 30vw;
+  .homeHeader .imgWrapper .shadowLeft {
+    min-width: 70vw;
+    -webkit-box-shadow: -5vw 5vw 0px #FAFD69, -5vw -5vw 0px #FAFD69, 0px 5vw 0px #FAFD69, 0px -5vw 0px #FAFD69;
+            box-shadow: -5vw 5vw 0px #FAFD69, -5vw -5vw 0px #FAFD69, 0px 5vw 0px #FAFD69, 0px -5vw 0px #FAFD69;
   }
   .homeHeader h1 {
     font-size: 45px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
   }
   .briefInfo {
     padding: 20px;
-    margin-top: -80px;
+    margin-top: -100px;
   }
   .briefInfo h3 {
     font-size: 25px;
