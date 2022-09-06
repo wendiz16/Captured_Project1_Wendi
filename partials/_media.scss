@@ -74,7 +74,11 @@
  }
  .gear{
   padding: 0 10px;
+  .btn{
+    margin-bottom: 35px;
+  }
  }
+ margin-bottom: 30px;
 }
 .tips{
   .wrapper{
@@ -83,8 +87,8 @@
       padding: 50px 10px 30px;
     }
   }
+  margin-bottom: 50px;
 }
-
 .profile{
   .profileContainer{
     padding: 65px 35px;
@@ -281,7 +285,16 @@
   .navBar li{
     display: flex;
     flex-wrap: wrap;
+    a{
+      font-size: 18px;
+    }
   }}
+
+  .blogHeader{
+    h2{
+      margin-top: 35px;
+    }
+  }
 
   //section
   .blogMain{
@@ -333,6 +346,11 @@
     .blogContainer{
       width:100%;
       padding: 10px;
+      .blogImg{
+        .shadowLb2{
+          box-shadow: -5vw 5vw 0px $boxColor
+        }
+      }
       .blogContent{
         margin:0;
         h3{

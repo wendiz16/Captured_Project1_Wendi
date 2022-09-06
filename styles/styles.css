@@ -1028,11 +1028,20 @@ footer p {
   .briefInfo .wrapper h3 {
     margin-top: -600px;
   }
+  .solutions {
+    margin-bottom: 30px;
+  }
   .solutions .skills {
     padding: 10px 10px;
   }
   .solutions .gear {
     padding: 0 10px;
+  }
+  .solutions .gear .btn {
+    margin-bottom: 35px;
+  }
+  .tips {
+    margin-bottom: 50px;
   }
   .tips .wrapper .tipContainer1, .tips .wrapper .tipContainer2, .tips .wrapper .tipContainer3, .tips .wrapper .tipContainer4 {
     width: 45%;
@@ -1205,6 +1214,12 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .navWrapper .navBar li a {
+    font-size: 18px;
+  }
+  .blogHeader h2 {
+    margin-top: 35px;
+  }
   .blogMain .blogWrapper .sideContainer {
     width: 100%;
     margin-top: 0;
@@ -1252,6 +1267,10 @@ footer p {
   .blogMain .blogWrapper .blogContainer {
     width: 100%;
     padding: 10px;
+  }
+  .blogMain .blogWrapper .blogContainer .blogImg .shadowLb2 {
+    -webkit-box-shadow: -5vw 5vw 0px #FAFD69;
+            box-shadow: -5vw 5vw 0px #FAFD69;
   }
   .blogMain .blogWrapper .blogContainer .blogContent {
     margin: 0;
