@@ -1285,6 +1285,7 @@ footer p {
   }
   .blogMain .blogWrapper .blogContainer .comments h4 {
     font-size: 20px;
+    text-align: center;
   }
   .blogMain .blogWrapper .blogContainer .comments .commentsContent1 {
     margin-bottom: 50px;
